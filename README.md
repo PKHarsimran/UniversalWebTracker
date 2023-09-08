@@ -22,15 +22,38 @@ By using this approach, we aim to create a more resource-friendly and responsive
 
 
 
+## Project Progress
 
-## Project Tasks
+📌 **Create a Python script to track website changes**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
 
-| Task                                           | Status        | Description                                                                                                                                                                                             | Details                                           |
-| ---------------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| Create a Python script to track website changes | In progress   | Develop a Python script that can retrieve and store the hash of a website. Add functionality to compare the stored hash with the current website hash to detect changes.                     | Using `requests` and `hashlib` modules.           |
-| Implement a function to save website hashes     | Completed     | Create the `save_hash()` function capable of saving website hashes to a file named `hash.txt`.                                                                                                          | Accepts website URL and hash as input.            |
-| Establish a continuous website monitoring loop  | In progress   | Design a system that periodically checks the website for changes. When a discrepancy between the current hash and the stored hash is detected, the script will trigger a change notification.    | Using `cron` jobs for periodic monitoring.         |
-| Notify of website changes via Jira             | To be done    | Integrate Jira for change notifications. Develop code to automatically create Jira tickets or updates when website changes are detected.                                                              | Specify Jira project and issue details.           |
+📌 **Implement a function to save website hashes**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
 
+📌 **Implement a function to read initial hash**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
+
+📌 **Run script using cron**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
+
+📌 **Notify of website changes via Jira**  
+⌛ To be done  
+▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱ 0%
+
+📌 **Implement logging**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
+
+📌 **Set User-Agent in HTTP requests**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
+
+📌 **Implement request timeout**  
+✅ Completed  
+▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
 
 
