@@ -2,10 +2,6 @@
 🔍 Keep track of Cortex agent version updates effortlessly with our Python script designed to monitor the official Cortex agent version site. Receive timely alerts whenever a new version is released, ensuring you're always up-to-date with the latest 
 changes.
 
-## Rationale for Using File Modification Time
-
-In this script, we've chosen to monitor website changes by utilizing the file modification time of the hash file (`hash.txt`) rather than relying solely on a while loop with a fixed sleep interval. Here's why we made this decision:
-
 ### Improved Resource Efficiency
 
 - A while loop with a fixed sleep interval can consume system resources, even when there are no changes detected. By checking the file modification time, we can reduce resource usage and make the script more efficient.
