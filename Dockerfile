@@ -26,5 +26,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy your script into the container
 COPY . .
 
-# Run the cron command on container startup
-CMD cron && tail -f /var/log/cron.log
+# Run the script once when the container starts and then start cron
+CMD python main.py && cron && tail -f /var/log/cron.log
