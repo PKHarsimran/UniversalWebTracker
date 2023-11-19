@@ -2,21 +2,11 @@
 🔍 Keep track of Cortex agent version updates effortlessly with our Python script designed to monitor the official Cortex agent version site. Receive timely alerts whenever a new version is released, ensuring you're always up-to-date with the latest 
 changes.
 
-### Improved Resource Efficiency
-
-- A while loop with a fixed sleep interval can consume system resources, even when there are no changes detected. By checking the file modification time, we can reduce resource usage and make the script more efficient.
-
-### Immediate Response to Changes
-
-- Monitoring the hash file's modification time allows us to immediately respond to changes. When the hash file is updated, it indicates a change in the website, and the script can react accordingly.
-
-### Flexibility in Check Frequency
-
-- With the file modification time approach, we can dynamically adjust the frequency of checks by modifying the sleep interval. This flexibility allows us to balance between timely detection of changes and resource efficiency.
+### Docker Integration
+- **Containerized for Convenience:** The script is now Dockerized, offering easy deployment and isolation from other system processes. Run the monitoring tool in a Docker container to ensure consistent environment and dependencies.
+- **Scheduled Monitoring with Cron:** Inside the Docker environment, the script is executed as a cron job, enabling regular and automated checks for website updates without manual intervention.
 
 By using this approach, we aim to create a more resource-friendly and responsive website monitoring script.
-
-
 
 ## Project Progress
 
