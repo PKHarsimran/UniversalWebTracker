@@ -1,0 +1,3 @@
+# Contents of requirements.txt
+requests
+jira
