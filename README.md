@@ -16,38 +16,3 @@
 
 Embrace the power of automation and versatility with UniversalWebTracker – your go-to solution for keeping tabs on any website efficiently and effortlessly.
 
-## Project Progress
-
-📌 **Create a Python script to track website changes**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Implement a function to save website hashes**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Implement a function to read initial hash**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Run script using cron**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Notify of website changes via Jira**  
-⌛ To be done  
-▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱ 0%
-
-📌 **Implement logging**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Set User-Agent in HTTP requests**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-📌 **Implement request timeout**  
-✅ Completed  
-▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ 100%
-
-
