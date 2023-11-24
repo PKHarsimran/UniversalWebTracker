@@ -18,32 +18,34 @@ Embrace the power of automation and versatility with UniversalWebTracker – you
 
 ## How It Works
 
-1. **Setting the Target URL**
-   - The script is configured to monitor a specific URL. Originally designed for Cortex agent version updates, it can be easily adjusted to track any website.
+### 1. **Target URL Configuration**
+   - Users configure the script to monitor a specific URL. This flexibility allows tracking of virtually any website.
 
-2. **Fetching Website Content**
-   - At regular intervals, the script sends an HTTP request to the targeted URL to fetch the current content of the webpage.
+### 2. **Fetching and Analyzing Content**
+   - The script periodically sends an HTTP request to the targeted URL to fetch the current webpage content.
+   - It computes a SHA-256 hash of this content, providing a unique fingerprint for the current state of the webpage.
 
-3. **Computing the Content Hash**
-   - The script computes a hash (SHA-256) of the fetched content. This hash serves as a fingerprint of the content at that specific time.
+### 3. **Change Detection Mechanism**
+   - The script compares the newly computed hash with a previously stored hash (from the last check).
+   - A difference in hashes indicates a change in the webpage content.
 
-4. **Detecting Changes**
-   - The current hash is compared with the previously stored hash (from the last check). If there's a difference, it indicates that the content of the webpage has changed.
+### 4. **Notifications and Logging**
+   - When a change is detected, the script logs this event.
+   - It can be configured to send notifications or alerts to inform users about these changes.
 
-5. **Logging and Alerts**
-   - Upon detecting a change, the script logs this information and can be configured to send alerts or notifications, keeping the user informed about the updates.
+## Advanced Features
 
-6. **Docker Integration**
-   - The script is containerized using Docker. This ensures that it runs in an isolated environment, with consistent settings, regardless of where it is deployed.
-   - Inside the Docker container, the script is executed periodically as a cron job, automating the monitoring process.
+### Cron Job Scheduling
+- The script is integrated with a cron job within a Docker container. This setup automates the process, with the script running at regular intervals defined in the cron schedule.
 
-7. **Resource Efficiency**
-   - The script is designed to be light on system resources, making it an efficient solution for continuous monitoring.
+### Docker Integration
+- **Dockerfile Creation:** A Dockerfile is created to define the script's running environment. This file includes instructions for setting up Python, installing necessary dependencies, and configuring the cron job.
+- **Isolated Environment:** Running the script inside a Docker container ensures an isolated and consistent environment, regardless of the deployment platform.
+- **Cron Setup in Docker:** The Dockerfile includes steps to set up a cron job that regularly triggers the script. This approach automates the monitoring process, making it more reliable and efficient.
 
 ## Usage
 
-- To use the script, simply configure the target URL in the script settings.
-- Deploy the script using Docker to ensure a consistent and isolated environment.
-- The script will regularly check the specified website and notify you of any changes detected.
+- **Configure the URL:** Set the target website URL in the script.
+- **Deploy with Docker:** Build the Docker container using the provided Dockerfile. This container includes everything needed to run the script.
+- **Automated Monitoring:** Once deployed, the script will automatically check the specified website at intervals defined in the cron job.
 
-With UniversalWebTracker, stay up-to-date effortlessly with the latest changes on your favorite websites.
