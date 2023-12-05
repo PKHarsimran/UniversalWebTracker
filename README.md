@@ -23,7 +23,7 @@ Embrace the power of automation and versatility with UniversalWebTracker – you
 
 ### 2. **Fetching and Analyzing Content**
    - The script periodically sends an HTTP request to the targeted URL to fetch the current webpage content.
-   - It computes a SHA-256 hash of this content, providing a unique fingerprint for the current state of the webpage.
+   - It computes a SHA-256 hash of current content
 
 ### 3. **Change Detection Mechanism**
    - The script compares the newly computed hash with a previously stored hash (from the last check).
